@@ -1,0 +1,15 @@
+#t_img {
+	width: 400px;
+	height: auto;
+}
+
+body {
+
+	background-image: url("bg_wt.jpg");
+	background-color: #ffffff;
+}
+
+h1, div{
+
+	background-color: #ffffff;
+}
