@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Design</title>
+  </head>
+  <body>
+    <div style="border-style: solid;">
+    	<h1>User First Design</h1>
+    	<ol>
+    		<li>
+    			<h3>As a new user, I should be able to register for an account.</h3>
+    			<ul>
+    				<li>User visits homepage.</li>
+    				<li>User clicks "Sign Up" button.</li>
+    				<li>User fills out a "Create An Account" form.</li>
+    				<li>User clicks "Create Account" button.</li>
+    				<li>User is taken to their user page.</li>
+    			</ul>
+    		</li>
+    		<li>
+    			<h3>As a returning user, I should be able to scroll through my feed.</h3>
+    			<ul>
+    				<li>User visits homepage.</li>
+    				<li>User enters username and password.</li>
+    				<li>Users clicks "Log In".</li>
+    				<li>User is taken to their feed page.</li>
+    				<li>User can scroll to view posts.</li>
+    			</ul>
+    		</li>
+    		<li>
+    			<h3>As a returning user, I should be able to make a post.</h3>
+    			<ul>
+    				<li>User visits homepage.</li>
+    				<li>User enters username and password.</li>
+    				<li>Users clicks "Log In".</li>
+    				<li>User is taken to their feed page.</li>
+    				<li>User clicks "New Post" button.</li>
+    				<li>User enters post text and clicks "Post" button.</li>
+    				<li>User is taken back to their feed page.</li>
+    			</ul>
+    		</li>
+    		<li>
+    			<h3>As a returning user, I should be able to click on a hashtag and view posts for it.</h3>
+    			<ul>
+    				<li>User visits homepage.</li>
+    				<li>User enters username and password.</li>
+    				<li>Users clicks "Log In".</li>
+    				<li>User is taken to their feed page.</li>
+    				<li>User clicks on a hashtag in a post on the feed.</li>
+    				<li>User is taken to a feed page of all posts from all users with the selected hashtag.</li>
+    			</ul>
+    		</li>
+    		<li>
+    			<h3>As a returning user, I should be able to view another users profile.</h3>
+    			<ul>
+    				<li>User visits homepage.</li>
+                    <li>User enters username and password.</li>
+                    <li>Users clicks "Log In".</li>
+                    <li>User is taken to their feed page.</li>
+                    <li>User clicks on a username.</li>
+                    <li>User is taken to selected username's page.</li>
+    			</ul>
+    		</li>
+    	</ol>
+    </div>
+    <div style="border-style: solid;">
+    	<h1>Data First Design</h1>
+    	<ol>
+    		<li>
+    			<h2>Users</h2>
+    			<h3>Data needed</h3>
+    			<p>Each user will need a unique username and a password. It is important that the password is stored securely. Each user will need to store a list of posts. Each user will store a list of followERs and followEEs. Additionally, users may want to store some contact information and a profile picture. </p>
+    			<h3>RESTful routes pages</h3>
+    			<ol>
+    				<li>Create - Show page with message.</li>
+    				<li>Show - Username, profile picture, and users posts shown automatically, with options to see follower/followee list. If logged in as user, can see user feed.</li>
+    				<li>Update - Show page with message.</li>
+    				<li>Delete - Index page with message.</li>
+    				<li>Edit - Same form as New page.</li>
+    				<li>New - Form containing fields for username, password, profile picture, and other information (email?).</li>
+    				<li>Index - A list of all usernames (with profile picture possibly).</li>
+    			</ol>
+    		</li>
+    		<li>
+    			<h2>Posts/Messages</h2>
+    			<h3>Data needed</h3>
+    			<p>Posts need to keep track of their textual content and the user that created them, as well as metadata including (but not limited to) date/time posted.</p>
+    			<h3>RESTful routes pages</h3>
+    			<ol>
+    				<li>Create - Show page with message.</li>
+    				<li>Show - Text of post accompanied by username and profile picture of poster, with mentions and hashtags highlighted or denoted some other way.</li>
+    				<li>Update - Show page with message.</li>
+    				<li>Delete - Index page with message.</li>
+    				<li>Edit - Same as New form.</li>
+    				<li>New - Form with text field and submit button.</li>
+    				<li>Index - A list of all posts (filterable by user, mentioned user, hashtag, etc. possibly)</li>
+    			</ol>
+    		</li>
+    	</ol>
+    </div>
+  </body>
+</html>
